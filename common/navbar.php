@@ -33,7 +33,7 @@
         <div class="rightSide">
           <div class="search">
           </div>
-          <a href="#" class="logIn authenticationButton">
+          <a href="login.php" class="logIn authenticationButton">
             Log in
           </a>
           <a href="#" class="createAccount authenticationButton">
