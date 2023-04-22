@@ -1,0 +1,44 @@
+.footer {
+    padding: max(17.5px, 2vw) max(17.5px, 5vw);
+    background-color: #9e5c72;
+    -webkit-box-shadow: 0px -11px 17px 3px rgba(16,52,166,0.35);
+-moz-box-shadow: 0px -11px 17px 3px rgba(16,52,166,0.35);
+box-shadow: 0px -11px 17px 3px rgba(16,52,166,0.35);
+color: #fff;
+}
+.mainRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mainRow .leftSide {
+  width: 30%;
+}
+/* .topText {
+  margin-bottom: 20%;
+} */
+.name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: max(21px, 1.8vw);
+  margin-bottom: 15%;
+}
+.name .logo {
+  content: url(../../../images/Home/darkModeLogo.svg);
+  height: max(21px, 1.7vw);
+}
+.mainRow .rightSide {
+  width: 57%;
+}
+
+.socialMedia{
+    display: flex;
+    gap: 2vw;
+    margin-top: 15%;
+}
+
+.bottomRow{
+    bottom: 0;
+    text-align: center;
+}
