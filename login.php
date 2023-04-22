@@ -7,7 +7,8 @@
 </head>
 <body>
     <form method="POST" action="login.php">
-        <h1>SkyKosovo</h1>
+        <img src="/images/logopaback.png">
+        <h1 class="title">SkyKosovo</h1>
         <p>Fly Higher!</p>
 		<input class="inputi" type="email" id="email" name="email" placeholder="Email"required>
 		<input class="inputi" type="password" id="password" name="password" placeholder="Password"required>

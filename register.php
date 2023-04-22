@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyKosovo - Register</title>
+	<title>SkyKosovo - Register</title>
+	<link rel="stylesheet" type="text/css" href="./style/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+   <div class="container">
+   <form method="POST" action="login.php">
+        <h1>SkyKosovo</h1>
+        <p>Fly Higher!</p>
+        <div class="nameSurname">
+        <input class="inputi" type="text" id="name" name="name" placeholder="Name"required>
+        <input class="inputi" type="text" id="surname" name="surname" placeholder="Surname"required>
+        </div>
+		<input class="inputi" type="email" id="email" name="email" placeholder="Email"required>
+		<input class="inputi" type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"required>
+        <input class="inputi" type="number" id="age" name="age" placeholder="Age"required>
+        <div class="passwords">
+		<input class="inputi" type="password" id="password" name="password" placeholder="Password"required>
+		<input class="inputi" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"required>
+
+        
+        </div>
+        <div class="registerButton">
+        <a class="register" href="index.php">Register</a>
+        </div>
+        <div class="loginLink">
+        <a class="login"href="login.php">Already have an account? Log in!</a>
+        </div>
+        <div class="socialMedia">
+        <i class="fa-brands fa-instagram" ></i>
+        <i class="fa-brands fa-facebook-f" ></i>
+        <i class="fa-brands fa-twitter" ></i>
+        </div>
+	</form>
+
+   </div>
     
 </body>
 </html>
+
