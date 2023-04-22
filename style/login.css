@@ -1,5 +1,4 @@
 body {
-    /* font-family: Arial, sans-serif; */
     background-color: #ffffff;
     background-image: url("./../images/background.jpg");
     background-size: cover;
@@ -7,17 +6,17 @@ body {
 
 h1 {
     text-align: center;
-    color: #1034A6
+    color: #1034A6;
+
 }
 
 p {
     text-align: center;
-    color: #1034A6
+    color: #1034A6;
 }
 
 form {
     text-align: center;
-    /* align-items: center; */
     background: rgba(165, 161, 161, 0.48);
     width: 400px;
     margin: 0 auto;
@@ -27,20 +26,11 @@ form {
     box-shadow: 0px 0px 5px #cccccc;
     backdrop-filter: blur(8px);
     position: fixed;
-    top: 20%;
+    top: 16%;
     left: 35%;
 }
 
-input[type="email"], input[type=password] {
-    /* display: inline-block; */
-    text-align: left;
-    margin: 10px 0;
-    padding: 10px;
-    width: 90%;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
+
 
 .loginButton{
     margin: 15px auto;
@@ -76,7 +66,7 @@ a[class="register"] {
 }
 
 .inputi{
-    width: 100%;
+    width: 90%;
   font-weight: 300;
   color: #fff;
   font-size: 14px;
@@ -88,4 +78,9 @@ a[class="register"] {
   border-bottom: 1px solid rgba(255, 255, 255, 0.27);
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  margin: max(10px, 1vw) 0;
+}
+
+::placeholder{
+    color: #fff;
 }
