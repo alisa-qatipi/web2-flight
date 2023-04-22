@@ -1,177 +1,325 @@
-
-.nav {
-  position: fixed;
-  top: 0;
-  width: 94%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 3%;
-  align-items: center;
-  z-index: 9999;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.nav .leftSide {
-  display: flex;
-  gap: 1rem;
-  flex: 1;
-  height: max(21px, 1.8vw);
-}
-.logoContent {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: max(12.5px, 0.9vw);
-  padding: max(10px, 1vw) 0;
-}
-.title {
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  letter-spacing: 0.05vh;
-  color: #000;
-}
-.logo {
-  width: 30%;
-  content: url(../../../images/Home/darkModeLogo.svg);
+.banner {
+  overflow: hidden;
+  background-image: url("../images/airplaneBanner.png");
+  background-size: cover;
+  height: 92.5vh;
+  /* margin-top: max(18px, 3.5vw); */
 }
 
-/* .productsContainer {
-  background-color: var(--tools-background);
-  padding: 0 3%;
-  font-size: max(12.5px, 0.9vw);
-  border-radius: 45px;
-  display: flex;
-  align-items: center;
-  padding: max(10px, 1vw) 3%;
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
-.products {
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
 
-  text-decoration: none;
-  color: var(--text-color);
+.booking-form {
+  box-sizing: border-box;
+  padding: 3em 3em;
+  background: rgba(165, 161, 161, 0.48);
+  width: 45%;
+  border-radius: 5px;
+  /* margin-left: max(18px, 3.5vw); */
+  margin: 4em max(18px, 3.5vw);
+  backdrop-filter: blur(8px);
+}
+/* 
+h1{
+  margin: 1em max(18px, 3.5vw);
 } */
-
-
-.nav .nav-links {
-  display: flex;
-  justify-content: space-around;
+.booking-form h2 {
+  display: inline-block;
+  text-align: left;
+  font-size: 24px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 0.4em;
+  padding: 0px 25px 10px 0px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #1034A6;
+  font-family: "Raleway", sans-serif;
 }
-.nav-link-container {
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
-  margin: 0 1rem;
+.fareChoice {
+  text-align: left;
+  margin: 0.7em 0;
+}
+.fareChoice h6 {
+  display: inline;
+  margin-top: 10px;
+  color: #1034A6;
+  font-size: 19px;
+  text-transform: capitalize;
+  margin-bottom: 0.7em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+}
+.fareChoice ul {
+  display: inline;
+}
+.fareChoice ul li input[type="radio"] {
   cursor: pointer;
-  padding: max(10px, 1vw) 0;
-
 }
-.nav-link {
-  color: #000;
-  font-size: max(12.5px, 0.9vw);
-  text-decoration: none;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 1vh;
+.fareChoice ul li label {
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
 }
 
-.nav-link::before {
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form textarea,
+select.form-control,
+input.datepicker {
+  width: 100%;
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  padding: 10px 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+/* .booking-form textarea {
+  resize: none;
+  height: 80px;
+} */
+/* .field-agileinfo-spc {
+  margin-bottom: 1em;
+} */
+
+.doubleRow {
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: max(10px, 1vw) 0;
+}
+.doubleInput {
+  flex-basis: 48.5%;
+  -webkit-flex-basis: 48.5%;
+}
+
+.passengerData {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.passenger {
+  flex-basis: 32%;
+  -webkit-flex-basis: 32%;
+}
+
+/* .form-w3-agile-text {
+  width: 100%;
+} */
+select.form-control option {
+  background: #000;
+}
+.booking-form input[type="submit"] {
+  text-transform: capitalize;
+  margin: 15px auto;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.8rem;
+  font-size: 16px;
+  width: 30%;
+  cursor: pointer;
   background-color: #1034A6;
-  transform: translateX(-50%);
-  transition: width 0.3s ease;
+  color: #fff;
 }
-/* &:hover {
-  .nav-link svg {
-    transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);
-    transition: transform ease-in-out 0.2s;
+
+/* .booking-form ::-webkit-input-placeholder {
+  color: #fff;
+}
+.booking-form :-moz-placeholder {
+  color: #fff;
+}
+.booking-form ::-moz-placeholder {
+  color: #fff;
+}
+.booking-form :-ms-input-placeholder {
+  color: #fff;
+} */
+.booking-form label {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.83);
+  letter-spacing: 2px;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.fareChoice ul li {
+  display: inline-block;
+  margin: 0em 2em;
+}
+/* @media (max-width: 1440px) {
+  .booking-form {
+    width: 73%;
+  }
+}
+@media (max-width: 1366px) {
+  .booking-form {
+    width: 75%;
+  }
+}
+@media (max-width: 1280px) {
+  .booking-form {
+    width: 80%;
+  }
+}
+@media (max-width: 1080px) {
+  .booking-form {
+    width: 83%;
+    padding: 2em 2.2em;
+  }
+}
+@media (max-width: 1024px) {
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    font-size: 22px;
+    padding: 0px 20px 7px 0px;
+  }
+  .booking-form input[type="submit"] {
+    padding: 0.5em 3em;
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 768px) {
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    font-size: 21px;
+    padding: 0px 15px 7px 0px;
+  }
+  .fareChoice h6 {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+  }
+.fareChoice ul li {
+    margin: 0em 1em;
+  }
+}
+@media (max-width: 667px) {
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    font-size: 19px;
+    letter-spacing: 1.5px;
+  }
+  .booking-form {
+    width: 50%;
+    padding: 2em 2em;
+  }
+  .booking-form input[type="text"],
+  .booking-form input[type="email"],
+  .booking-form textarea,
+  select.form-control,
+  input#datepicker {
+    padding: 8px 10px;
+  }
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    margin-bottom: 0.6em;
+  }
+}
+@media (max-width: 640px) {
+  .booking-form input[type="submit"] {
+    margin-right: 0.7em;
+  }
+}
+@media (max-width: 600px) {
+  .booking-form {
+    width: 90%;
+  }
+  .booking-form input[type="submit"] {
+    padding: 0.5em 2em;
+  }
+}
+
+@media (min-width: 737px) {
+  .triple-wthree {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+  .form-w3-agile-text11,
+  .form-w3-agile-text22,
+  .form-w3-agile-text33 {
+    flex-basis: 32%;
+    -webkit-flex-basis: 32%;
+  }
+}
+@media (max-width: 480px) {
+  .fareChoice ul li {
+    margin: 0em 0.5em;
+  }
+  .fareChoice {
+    margin: 1.3em 0 0.7em;
+  }
+  .booking-form {
+    width: 85%;
+  }
+  .fareChoice ul li {
+    margin: 1em 0em 0em 0.2em;
+    display: block;
+  }
+  .booking-form input[type="submit"]{
+    font-size: 1em;
+  }
+  .booking-form textarea {
+    height: 60px;
+  }
+  .fareChoice {
+    margin: 1em 0 0.7em;
+  }
+}
+@media (max-width: 414px) {
+  .booking-form {
+    width: 90%;
+  }
+  .booking-form {
+    width: 90%;
+    padding: 1.5em 1.7em;
+  }
+}
+@media (max-width: 384px) {
+  .booking-form input[type="submit"] {
+    float: none;
+  }
+  .booking-form input[type="submit"] {
+    margin-right: 0em;
+  }
+}
+@media (max-width: 320px) {
+  .booking-form {
+    width: 93%;
+    padding: 1.3em 1.5em;
+  }
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    font-size: 18px;
+    letter-spacing: 1.4px;
+    padding: 0px 12px 5px 0px;
   }
 } */
 
-.nav-link:hover::before {
-  width: 80%;
-}
-
-.nav .rightSide {
-  flex: 1;
-  justify-content: flex-end;
-  display: flex;
-  height: max(15px, 1.3vw);
-  align-items: center;
-  gap: 1rem;
-  padding: max(10px, 1vw) 0;
-}
-
-  .search {
-    padding-top: 0.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    border-radius: 50%;
-    font-size: max(15px, 1.3vw);
-  }
-
-  .logIn {
-    display: flex;
-    align-items: center;
-    color: #000;
-    font-size: max(12px, 0.7vw);
-    text-decoration: none;
-  }
-
-  .createAccount {
-    background-color: #1034A6;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 45px;
-    font-size: max(12px, 0.7vw);
-    text-decoration: none;
-  }
-
-  /* .mode {
-    background-color: var(--gray-background);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--gray-border);
-    height: max(17px, 0.9vh);
-    width: max(17px, 0.9vh);
-    border-radius: 50%;
-  } */
-/* .nav {
+/* .banner .background{
+  content: url("../images/airplaneBanner.png");
 } */
-
-.nav_sticky {
-  background-color: var(--background-color);
-}
-
-@media (min-width: 1043px) {
-  .nav .mobile-nav {
-    display: none;
-  }
-}
-
-@media (max-width: 1042px) {
-  .nav .rightSide,
-  .nav .nav-links,
-  .nav .leftSide {
-    display: none;
-    height: max(20px, 1vw);
-  }
-
-  /* // .nav .leftSide{
-  //   display: flex;
-  //   justify-content: center;
-  //   // align-items: center;
-  // } */
-}

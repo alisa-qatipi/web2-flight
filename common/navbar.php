@@ -7,11 +7,6 @@
             <div class="logo"></div>
             <div class="title">SkyKosovo</div>
           </div>
-          <!-- <div class="productsContainer">
-            <a class="products">
-              <p>Products</p>
-            </a>
-          </div> -->
         </div>
         <div class="nav-links">
           <div class="nav-link-container">
