@@ -36,7 +36,7 @@
           <a href="login.php" class="logIn authenticationButton">
             Log in
           </a>
-          <a href="#" class="createAccount authenticationButton">
+          <a href="../login.php" class="createAccount authenticationButton">
             Create Account
           </a>
           <div class="mode">
