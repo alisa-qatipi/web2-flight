@@ -3,15 +3,15 @@
         class="nav"
       >
         <div class="leftSide">
-          <div class="logoContent">
+          <a href="index.php" class="logoContent">
             <div class="logo"></div>
             <div class="title">SkyKosovo</div>
-          </div>
+          </a>
         </div>
         <div class="nav-links">
           <div class="nav-link-container">
-            <a href="#" class="nav-link">
-              Use Cases
+            <a href="offers.php" class="nav-link">
+              Offers
             </a>
           </div>
           <div class="nav-link-container">

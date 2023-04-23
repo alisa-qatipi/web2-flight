@@ -4,6 +4,23 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(112,112,112,1);
+  border-radius: 1px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color:  #1034A6;
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #0d2c90; 
+}
+
 .banner {
   overflow: hidden;
   background-image: url("../images/airplaneBanner.png");

@@ -1,5 +1,5 @@
 .nav {
-    /* position: sticky; */
+    position: sticky;
     top: 0;
     width: 94%;
     display: flex;
@@ -7,12 +7,13 @@
     padding: 0 3%;
     align-items: center;
     z-index: 9999;
-    background-color: #9e5c72;
+    background-color: #c6007e;
+    /* border: 1px solid red; */
     color: #fff;
-    border: 1px solid red;
-    /* -webkit-box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
+    /* border: 1px solid red; */
+    -webkit-box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
 -moz-box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
-box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35); */
+box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
     /* border: 0.5px solid red; */
     
   }
@@ -29,16 +30,17 @@ box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35); */
     gap: 0.3rem;
     font-size: max(12.5px, 0.9vw);
     padding: max(10px, 1vw) 0;
+    text-decoration: none;
   }
   .title {
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
     letter-spacing: 0.05vh;
-    color: #000;
+    color: #fff;
   }
   .logo {
     width: 30%;
-    /* content: url("../images/indexlogo.png"); */
+    content: url(../../../images/Home/darkModeLogo.svg);
   }
   
   
@@ -57,7 +59,7 @@ box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35); */
   
   }
   .nav-link {
-    color: #000;
+    color: #fff;
     font-size: max(12.5px, 0.9vw);
     text-decoration: none;
     position: relative;
@@ -114,7 +116,7 @@ box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35); */
     .logIn {
       display: flex;
       align-items: center;
-      color: #000;
+      color: #fff;
       font-size: max(12px, 0.7vw);
       text-decoration: none;
     }
@@ -123,7 +125,7 @@ box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35); */
       background-color: #1034A6;
       color: #fff;
       padding: 0.5rem 1rem;
-      border-radius: 45px;
+      border-radius: 5px;
       font-size: max(12px, 0.7vw);
       text-decoration: none;
     }
