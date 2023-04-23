@@ -7,8 +7,13 @@
 </head>
 <body>
    <div class="container">
-   <form method="POST" action="login.php">
-        <h1>SkyKosovo</h1>
+   <form method="POST" action="register.php">
+        <div class="titleContain">
+        <div class="logoContain">
+        <img class="logoReg" style="width: 5vw;" src="../airline/images/logo.png">
+        </div>
+        <h1 class="titleReg">SkyKosovo</h1>
+        </div>
         <p>Fly Higher!</p>
         <div class="nameSurname">
         <input class="inputi" type="text" id="name" name="name" placeholder="Name"required>

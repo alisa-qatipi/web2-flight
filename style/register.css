@@ -1,3 +1,17 @@
+.titleContain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
 .nameSurname, .passwords {
     display:flex;
     gap: 2vw;
