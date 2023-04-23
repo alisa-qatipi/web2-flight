@@ -8,9 +8,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    width: 100px;
 }
 
+.logoContain img {
+    max-width: 100%;
+}
 
 .nameSurname, .passwords {
     display:flex;
@@ -19,7 +22,17 @@
     margin: 0 auto;
 }
 
+body {
+    background-color: #ffffff;
+   
+}
 
+.nameSurname, .passwords {
+    display:flex;
+    gap: 2vw;
+    width: 90%;
+    margin: 0 auto;
+}
 
 body {
     background-color: #ffffff;
@@ -58,8 +71,6 @@ form {
     left: 20%;
     /* margin: 0 auto; */
 }
-
-
 
 .registerButton{
     margin: 15px auto;

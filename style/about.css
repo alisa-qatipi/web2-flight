@@ -1,0 +1,7 @@
+body {
+    background-image: url(../images/image.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 92.5vh;
+}
