@@ -10,11 +10,11 @@
    <form method="POST" action="register.php">
         <div class="titleContain">
         <div class="logoContain">
-        <img class="logoReg" style="width: 5vw;" src="../airline/images/logo.png">
+        <img class="logoReg" style="width: 5vw;" src="../airline/images/SkyKosovoLogo.png">
         </div>
         <h1 class="titleReg">SkyKosovo</h1>
         </div>
-        <p>Fly Higher!</p>
+        <p>The Wings of Kosovo!</p>
         <div class="nameSurname">
         <input class="inputi" type="text" id="name" name="name" placeholder="Name"required>
         <input class="inputi" type="text" id="surname" name="surname" placeholder="Surname"required>
@@ -32,7 +32,7 @@
         <a class="register" href="index.php">Register</a>
         </div>
         <div class="loginLink">
-        <a class="login"href="login.php">Already have an account? Log in!</a>
+        <div class="login">Already have an account?</div> <a href="/airline/login.php"class="loginshort">Log in</a>
         </div>
         <div class="socialMedia">
         <i class="fa-brands fa-instagram" ></i>

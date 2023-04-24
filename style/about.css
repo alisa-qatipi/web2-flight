@@ -1,7 +1,49 @@
 body {
-    background-image: url(../images/image.jpg);
-    overflow: hidden;
+    /* overflow: hidden; */
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 92.5vh;
+    padding: 0;
+    margin: 0;
+    /* height: 92.5vh; */
+}
+
+.about {
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 4em auto;
+    background: rgba(165, 161, 161, 0.48);
+    backdrop-filter: blur(8px);
+    color: #ffff;
+    padding: 2em 3em;
+}
+
+.h3 {
+    color: #323361;
+}
+
+.h4 {
+    color: #323361;
+}
+
+.h5 {
+    color: #323361;
+}
+
+.h6 {
+    color: #323361;
+}
+
+.about .title {
+    text-align: center;
+    /* color: #1034A6; */
+    /* text-transform: uppercase; */
+    font-style: bold;
+    /* font-size: max(20px, 2.8vw); */
+    /* margin: 0 0 2% 0; */
+    letter-spacing: 2px;
+    z-index: 33;
+    margin-top: 0;
 }

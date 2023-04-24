@@ -1,15 +1,10 @@
 <div class="footer">
     <div class="mainRow">
         <div class="leftSide">
-            <div class="name">
-                <div class="logo"></div>
-                <h5 class="title">SkyKosovo</h5>
-            </div>
-            <p>
                 <p class="topText">
                 Your one-stop destination for hassle-free airplane ticket bookings. Fly to your desired destination with ease and comfort, as we bring you the best deals and offers for your next adventure. Book now and soar the skies with SkyKosovo!
                 </p>
-            </p>
+           
             <div class="socialMedia">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-facebook-f"></i>

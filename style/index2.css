@@ -13,7 +13,7 @@ body {
     border-radius: 1px;
   }
   body::-webkit-scrollbar-thumb {
-    background-color:  #9c0364;
+    background-color:  #323361;
     border-radius: 1px;
   }
 /*   
@@ -37,7 +37,7 @@ body {
   .booking-form {
     box-sizing: border-box;
     padding: 3em 3em;
-    background: rgba(165, 161, 161, 0.48);
+    background: rgba(165, 161, 161, 0.116);
     width: 45%;
     border-radius: 5px;
     margin: 4em max(18px, 3.5vw);
@@ -53,7 +53,7 @@ body {
     padding: 0px 25px 10px 0px;
     font-weight: 400;
     letter-spacing: 2px;
-    border-bottom: 2px solid #1034A6;
+    border-bottom: 2px solid #ffff;
     font-family: "Raleway", sans-serif;
   }
   .fareChoice {
@@ -63,7 +63,7 @@ body {
   .fareChoice h6 {
     display: inline;
     margin-top: 10px;
-    color: #1034A6;
+    color: #323361;
     font-size: 19px;
     text-transform: capitalize;
     margin-bottom: 0.7em;
@@ -112,6 +112,11 @@ body {
     justify-content: space-between;
     margin: max(10px, 1vw) 0;
   }
+
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
   .doubleInput {
     flex-basis: 48.5%;
     -webkit-flex-basis: 48.5%;
@@ -144,7 +149,7 @@ body {
     font-size: 16px;
     width: 30%;
     cursor: pointer;
-    background-color: #1034A6;
+    background-color: #323361;
     color: #fff;
   }
   .booking-form label {
@@ -201,7 +206,7 @@ body {
     padding: 0 5px 5px;
     text-align: center;
     width: 50px;
-    color: #1034A6;
+    color: #323361;
   }
 
   .fa-solid{
@@ -214,7 +219,7 @@ body {
   }
 
   .descTitle{
-    color: #c6007e;
+    color:#323361;
     font-family: P22 Underground Pro,P22 Apple Fallback,P22 Windows Fallback,P22 Android Fallback,sans-serif;
     font-weight: 600;
     margin-bottom: 5px;

@@ -11,23 +11,25 @@
 
     <title>SkyKosovo - About Us</title>
 </head>
-<body>
-    <?php include("common/navbar.php"); ?>  
-</head>
-<body>
-<main>
+
+<body> 
+    <?php include("common/navbar.php") ?>
+    <div class="about">
+      <div class="title">
       <h2>About Us</h2>
+      </div>
       <p>Welcome to our airline! We are a premier air travel company committed to providing our customers with safe, comfortable, and reliable flights to destinations all over the world.</p>
       <p>At our airline, we believe that air travel should be a seamless and enjoyable experience for everyone. That's why we strive to create an environment that is welcoming and accommodating, from the moment you step into our airport terminals to the time you disembark at your destination.</p>
-      <h3>Our Fleet</h3>
+      <div class="h3"><h3>Our Fleet</h3></div>
       <p>Our fleet of modern aircraft is equipped with state-of-the-art technology, ensuring a smooth and efficient flight every time. Our experienced pilots and flight crews undergo rigorous training to ensure your safety and comfort throughout your journey.</p>
-      <h3>Travel Classes</h3>
+      <div class="h4"><h3>Travel Classes</h3></div>
       <p>We offer a variety of travel classes to suit your needs, including First Class, Business Class, and Economy Class. Our in-flight amenities include delicious meals, entertainment systems, and comfortable seating options. We also offer special accommodations for passengers with disabilities or special needs.</p>
-      <h3>Sustainability</h3>
+      <div class="h5"><h3>Sustainability</h3></div>
       <p>At our airline, we are committed to environmental sustainability and minimizing our carbon footprint. We use sustainable aviation fuel whenever possible, and have implemented various initiatives to reduce waste and conserve energy.</p>
-      <h3>Customer Service</h3>
+      <div class="h6"><h3>Customer Service</h3></div>
       <p>We value our customers and strive to provide excellent customer service at every touchpoint. Our team is available 24/7 to answer your questions and assist you with your travel needs.</p>
-    </main>
-    
+    </div>
+
+    <?php include("common/footer.php") ?>
 </body>
 </html>

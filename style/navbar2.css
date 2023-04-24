@@ -7,15 +7,24 @@
     padding: 0 3%;
     align-items: center;
     z-index: 9999;
-    background-color: #c6007e;
+    background-color: #F0B91D;
     /* border: 1px solid red; */
     color: #fff;
     /* border: 1px solid red; */
-    -webkit-box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
--moz-box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
-box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
+    -webkit-box-shadow: 0px 11px 17px 3px rgba(0,0,117,0.46);
+    -moz-box-shadow: 0px 11px 17px 3px rgba(0,0,117,0.46);
+    box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
     /* border: 0.5px solid red; */
     
+  }
+
+  .nav .logo {
+    width: 30%;
+  }
+
+  .nav .logo img{
+    width: 100%;
+    height: max(21px, 1.8vw);
   }
   
   .nav .leftSide {
@@ -28,7 +37,7 @@ box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    font-size: max(12.5px, 0.9vw);
+    font-size: max(25px, 0.9vw);
     padding: max(10px, 1vw) 0;
     text-decoration: none;
   }
@@ -36,14 +45,9 @@ box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
     letter-spacing: 0.05vh;
-    color: #fff;
+    color: #323361;
   }
-  .logo {
-    width: 30%;
-    content: url(../../../images/Home/darkModeLogo.svg);
-  }
-  
-  
+
   
   .nav .nav-links {
     display: flex;
@@ -59,8 +63,8 @@ box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
   
   }
   .nav-link {
-    color: #fff;
-    font-size: max(12.5px, 0.9vw);
+    color: #323361;
+    font-size: max(20px, 0.9vw);
     text-decoration: none;
     position: relative;
     display: flex;
@@ -77,7 +81,7 @@ box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: #1034A6;
+    background-color: #f9f9fb;
     transform: translateX(-50%);
     transition: width 0.3s ease;
   }
@@ -103,30 +107,20 @@ box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
     padding: max(10px, 1vw) 0;
   }
   
-    .search {
-      padding-top: 0.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      border-radius: 50%;
-      font-size: max(15px, 1.3vw);
-    }
-  
     .logIn {
       display: flex;
       align-items: center;
-      color: #fff;
-      font-size: max(12px, 0.7vw);
+      color: #323361;
+      font-size: max(20px, 0.7vw);
       text-decoration: none;
     }
   
     .createAccount {
-      background-color: #1034A6;
+      background-color: #323361;
       color: #fff;
       padding: 0.5rem 1rem;
       border-radius: 5px;
-      font-size: max(12px, 0.7vw);
+      font-size: max(20px, 0.7vw);
       text-decoration: none;
     }
   

@@ -2,14 +2,13 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #94bbe9;
 }
 
 .banner{
-    background-image: url(../images/sky.avif);
     background-size: cover;
     background-repeat: no-repeat;
     padding:  max(20px, 2.8vw) 0;
-    backdrop-filter: blur(2px);
     color: #fff;
     position: relative;
     /* background-color: rgba(0, 0, 0, 0.5); */
@@ -98,7 +97,7 @@ h3 {
 }
 
 .card:hover {
-    background-color: #c6007e; /* set new background color on hover */
+    background-color: #F0B91D; /* set new background color on hover */
     border: 1px solid transparent;
     color: #fff;
   }
@@ -143,7 +142,7 @@ img {
     /* width: 100%; */
     cursor: pointer;
     text-decoration: none;
-    background-color: #1034A6;
+    background-color: #323361;
     color: #fff;
 }
 

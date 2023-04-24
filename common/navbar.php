@@ -4,7 +4,8 @@
       >
         <div class="leftSide">
           <a href="index.php" class="logoContent">
-            <div class="logo"></div>
+            <div class="logo"><img src="/airline/images/SkyKosovoLogo.png" alt="Logo"></div>
+            
             <div class="title">SkyKosovo</div>
           </a>
         </div>
@@ -16,17 +17,17 @@
           </div>
           <div class="nav-link-container">
             <a href="#" class="nav-link">
-              Company
+              Bookings
+            </a>
+          </div>
+          <div class="nav-link-container">
+            <a href="about.php" class="nav-link">
+              About Us
             </a>
           </div>
           <div class="nav-link-container">
             <a href="#" class="nav-link">
-              Resources
-            </a>
-          </div>
-          <div class="nav-link-container">
-            <a href="#" class="nav-link">
-              Blog
+              Regulations
             </a>
           </div>
         </div>

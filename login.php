@@ -10,11 +10,11 @@
     <form method="POST" action="login.php">
         <div class="titleContainer">
         <div class="logoContainer">
-        <img class="logo" style="width: 5vw;" src="../airline/images/logo.png">
+        <img class="logo" style="width: 5vw;" src="../airline/images/SkyKosovoLogo.png">
         </div>
         <h1 class="title">SkyKosovo</h1>
         </div>
-        <p>Fly Higher!</p>
+        <p>The Wings of Kosovo!</p>
 		<input class="inputi" type="email" id="email" name="email" placeholder="Email"required>
 		<input class="inputi" type="password" id="password" name="password" placeholder="Password"required>
         <div class="loginButton">

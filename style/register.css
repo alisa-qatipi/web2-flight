@@ -46,14 +46,14 @@ body {
 
 h1 {
     text-align: center;
-    color: #1034A6;
+    color: #323361;
     letter-spacing: 1vh;
 
 }
 
 p {
     text-align: center;
-    color: #1034A6;
+    color:#323361;
 }
 
 form {
@@ -67,7 +67,7 @@ form {
     box-shadow: 0px 0px 5px #cccccc;
     backdrop-filter: blur(8px);
     position: fixed;
-    top: 5%;
+    top: 3%;
     left: 20%;
     /* margin: 0 auto; */
 }
@@ -80,8 +80,14 @@ form {
     font-size: 16px;
     width: 30%;
     cursor: pointer;
-   background-color: #1034A6;
+   background-color: #323361;
 
+}
+
+.loginshort {
+    font-weight: bold;
+    text-decoration: none;
+    color:#323361;
 }
 
 a[class="register"] {
@@ -91,8 +97,8 @@ a[class="register"] {
    
 }
 
-a[class="login"] {
-    color:#1034A6;
+.login {
+    color:#323361;
     text-decoration: none;
 }
 
@@ -101,7 +107,7 @@ a[class="login"] {
     gap: 2vw;
     justify-content: center;
     margin-top: 4vh;
-    color:#1034A6;
+    color:#323361;
 }
 
 .inputi{

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style/navbar2.css">
     <link rel="stylesheet" href="./style/index2.css">
     <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>SkyKosovo</title>
 </head>
@@ -111,7 +111,6 @@
 
 	<div class="advantages">
 		<div class="container">
-			<div class="title">Why SkyKosovo?</div>
 			<div class="reasons">
 				<div class="reason">
 					<div class="icon">
@@ -125,7 +124,7 @@
 				<div class="reason">
 					<div class="icon">
 					<!-- <i class="fa-solid fa-badge-dollar"></i> -->
-					<i class="fa-solid fa-route"></i>
+					<i class="fa-solid fa-badge-dollar"></i>
 					</div>
 					<div class="description">
 						<div class="descTitle">Competitive Fares</div>
@@ -135,21 +134,21 @@
 				<div class="reason">
 					<div class="icon">
 					<!-- <i class="fa-solid fa-head-side-headphones"></i> -->
-					<i class="fa-solid fa-route"></i>
+					<i class="fa-solid fa-head-side-headphones"></i>
 					</div>
 					<div class="description">
-						<div class="descTitle">Top-notch Customer Service</div>
+						<div class="descTitle">Top Customer Service</div>
 						<div class="descParagraph">SkyKosovo takes pride in its exceptional customer service. Its dedicated customer support team is available 24/7 to assist travelers with their queries and concerns, ensuring a hassle-free travel experience from start to finish.</div>
 					</div>
 				</div>
 				<div class="reason">
 					<div class="icon">
 					<!-- <i class="fa-duotone fa-person-seat"></i> -->
-					<i class="fa-solid fa-route"></i>
+					<i class="fa-duotone fa-person-seat"></i>
 					</div>
 					<div class="description">
-						<div class="descTitle">Modern Fleet and In-flight Comfort</div>
-						<div class="descParagraph">SkyKosovo boasts of a modern fleet of aircraft equipped with the latest technology and amenities to provide travelers with a comfortable and safe journey. From comfortable seating arrangements to in-flight entertainment and meal options, SkyKosovo ensures that every traveler has a memorable flying experience.</div>
+						<div class="descTitle">Modern Fleet and Comfort</div>
+						<div class="descParagraph">SkyKosovo boasts of a modern fleet of aircraft equipped with the latest technology and amenities to provide travelers with a comfortable and safe journey. We ensure that every traveler has a memorable flying experience.</div>
 					</div>
 				</div>
 			</div>

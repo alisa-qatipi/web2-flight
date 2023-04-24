@@ -20,14 +20,14 @@ body {
 
 .title {
     text-align: center;
-    color: #1034A6;
+    color:#323361;
     letter-spacing: 1vh;
     
 }
 
 p {
     text-align: center;
-    color: #1034A6;
+    color:#323361;
 }
 
 form {
@@ -53,10 +53,10 @@ form {
     /* text-align: center; */
     border-radius: 5px;
     padding: 0.8rem 1.8rem;;
-    font-size: 16px;
+    font-size: 20px;
     width: 30%;
     cursor: pointer;
-   background-color: #1034A6;
+    background-color:#323361;
 
 }
 
@@ -68,7 +68,7 @@ a[class="login"] {
 }
 
 a[class="register"] {
-    color:#1034A6;
+    color:#323361;
     text-decoration: none;
 }
 
@@ -77,14 +77,14 @@ a[class="register"] {
     gap: 2vw;
     justify-content: center;
     margin-top: 4vh;
-    color:#1034A6;
+    color:#f9f9fb;
 }
 
 .inputi{
-    width: 90%;
+  width: 90%;
   font-weight: 300;
   color: #fff;
-  font-size: 14px;
+  font-size: 20px;
   letter-spacing: 1.2px;
   padding: 10px 10px;
   outline: none;
