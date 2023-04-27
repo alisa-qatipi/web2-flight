@@ -5,8 +5,10 @@
     color:#323361 ;
     position: relative;
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 .body {
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-image: radial-gradient(circle, #323361, #833e77, #cb4c6b, #f47848, #f0b91d);
 }

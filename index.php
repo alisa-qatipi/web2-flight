@@ -103,7 +103,7 @@
 		
 
 			
-			<input type="submit" value="Submit">
+			<input type="submit" value="Submit" action="bookings.php">
 			
 		</form>
 	</div>
@@ -123,8 +123,7 @@
 				</div>
 				<div class="reason">
 					<div class="icon">
-					<!-- <i class="fa-solid fa-badge-dollar"></i> -->
-					<i class="fa-solid fa-badge-dollar"></i>
+					<i class="fa-solid fa-dollar-sign" style="color: #323361;"></i>
 					</div>
 					<div class="description">
 						<div class="descTitle">Competitive Fares</div>
@@ -133,8 +132,7 @@
 				</div>
 				<div class="reason">
 					<div class="icon">
-					<!-- <i class="fa-solid fa-head-side-headphones"></i> -->
-					<i class="fa-solid fa-head-side-headphones"></i>
+					<i class="fa-solid fa-phone" style="color: #323361;"></i>
 					</div>
 					<div class="description">
 						<div class="descTitle">Top Customer Service</div>
@@ -143,8 +141,7 @@
 				</div>
 				<div class="reason">
 					<div class="icon">
-					<!-- <i class="fa-duotone fa-person-seat"></i> -->
-					<i class="fa-duotone fa-person-seat"></i>
+					<i class="fa-solid fa-plane-up" style="color: #323361;"></i>
 					</div>
 					<div class="description">
 						<div class="descTitle">Modern Fleet</div>

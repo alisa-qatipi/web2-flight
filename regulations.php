@@ -13,5 +13,7 @@
 <body>
     <?php include("common/navbar.php") ?>
     <h1 class="regTitle">SkyKosovo Regulations</h1>
+    <h3>Carry-On Luggage Regulations:</h2>
+    <?php include("common/footer.php")?>
 </body>
 </html>
