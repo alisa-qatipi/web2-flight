@@ -18,7 +18,7 @@
       <div class="title">
       <h2>About Us</h2>
       </div>
-      <p>Welcome to our airline! We are a premier air travel company committed to providing our customers with safe, comfortable, and reliable flights to destinations all over the world.</p>
+      <p>Welcome to our airline! We are a premier air travel company committed to providing our customers with safe, comfortable, and reliable flights to destinations all over the world. Our wish is to make all of your visa-free flights from the 1st of January enjoyable.</p>
       <p>At our airline, we believe that air travel should be a seamless and enjoyable experience for everyone. That's why we strive to create an environment that is welcoming and accommodating, from the moment you step into our airport terminals to the time you disembark at your destination.</p>
       <div class="h3"><h3>Our Fleet</h3></div>
       <p>Our fleet of modern aircraft is equipped with state-of-the-art technology, ensuring a smooth and efficient flight every time. Our experienced pilots and flight crews undergo rigorous training to ensure your safety and comfort throughout your journey.</p>

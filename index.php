@@ -147,7 +147,7 @@
 					<i class="fa-duotone fa-person-seat"></i>
 					</div>
 					<div class="description">
-						<div class="descTitle">Modern Fleet and Comfort</div>
+						<div class="descTitle">Modern Fleet</div>
 						<div class="descParagraph">SkyKosovo boasts of a modern fleet of aircraft equipped with the latest technology and amenities to provide travelers with a comfortable and safe journey. We ensure that every traveler has a memorable flying experience.</div>
 					</div>
 				</div>

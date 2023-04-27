@@ -26,7 +26,7 @@
             </a>
           </div>
           <div class="nav-link-container">
-            <a href="#" class="nav-link">
+            <a href="regulations.php" class="nav-link">
               Regulations
             </a>
           </div>
