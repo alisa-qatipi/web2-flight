@@ -8,6 +8,19 @@ body {
     /* height: 92.5vh; */
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(112,112,112,1);
+    border-radius: 1px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color:  #323361;
+    border-radius: 1px;
+  }
+
 .about {
     width: 70%;
     font-size: 19px;
