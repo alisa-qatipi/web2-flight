@@ -113,7 +113,7 @@
       text-decoration: none;
     }
   
-    .createAccount {
+    .createAccount, .bookings {
       background-color: #323361;
       color: #fff;
       padding: 0.5rem 1rem;

@@ -37,11 +37,11 @@ body {
   
   .booking-form {
     box-sizing: border-box;
-    padding: 3em 3em;
+    padding: 1em 3em;
     background: rgba(165, 161, 161, 0.116);
-    width: 45%;
+    width: 50%;
     border-radius: 5px;
-    margin: 4em max(18px, 3.5vw);
+    margin: 0.5rem max(18px, 3.5vw);
     backdrop-filter: blur(8px);
     font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   
@@ -143,9 +143,9 @@ body {
   select.form-control option {
     background: #000;
   }
-  .booking-form input[type="submit"] {
+  .activated {
     text-transform: capitalize;
-    margin: 15px auto;
+    margin-top: 15px;
     border: none;
     border-radius: 5px;
     padding: 0.8rem 1.8rem;
@@ -156,6 +156,27 @@ body {
     color: #fff;
     font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
   }
+
+  .disabled{
+    text-transform: capitalize;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 1.8rem;
+    font-size: 16px;
+    width: 30%;
+    /* cursor: pointer; */
+    background-color: gray;
+    color: #000;
+  }
+
+  .notify{
+    font-size: 17px;
+    color: #fff;
+    /* border-bottom: 1px solid #fff; */
+
+  }
+
   .booking-form label {
     font-size: 13.5px;
     color: rgba(255, 255, 255, 0.83);
