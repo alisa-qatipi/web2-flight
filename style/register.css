@@ -72,18 +72,6 @@ form {
     /* margin: 0 auto; */
 }
 
-.errorMessage{
-    margin: 2vh auto;
-    padding: 1vh;
-    letter-spacing: 0.3vh;
-    /* line-height: 1vh; */
-    width: 40%;
-    color: #F0B91D;
-    font-weight: bolder;
-    border-bottom: 1px solid #323361;
-    border-top: 1px solid #323361;
-}
-
 .registerButton{
     margin: 15px auto;
     border: none;
@@ -93,7 +81,6 @@ form {
     width: 30%;
     cursor: pointer;
    background-color: #323361;
-   color: white;
 
 }
 

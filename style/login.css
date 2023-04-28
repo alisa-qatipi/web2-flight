@@ -5,7 +5,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.titleContainer {
+.titleContainer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,17 +15,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .title {
   text-align: center;
-  color: #323361;
+  color:#323361;
   letter-spacing: 1vh;
+  
 }
 
 p {
   text-align: center;
-  color: #323361;
+  color:#323361;
 }
 
 form {
@@ -43,65 +45,57 @@ form {
   left: 35%;
 }
 
-.errorMessage {
-  margin: 2vh auto;
-  padding: 1vh;
-  letter-spacing: 0.3vh;
-  /* line-height: 1vh; */
-  width: 50%;
-  color: #f0b91d;
-  font-weight: bolder;
-  border-bottom: 1px solid #323361;
-  border-top: 1px solid #323361;
-}
 
-.loginButton {
+
+.loginButton{
   margin: 15px auto;
   border: none;
   /* text-align: center; */
   border-radius: 5px;
-  padding: 0.8rem 1.8rem;
+  padding: 0.8rem 1.8rem;;
   font-size: 20px;
   width: 30%;
   cursor: pointer;
-  background-color: #323361;
-  color: #fff;
+  background-color:#323361;
+
 }
 
 a[class="login"] {
-  text-decoration: none;
-  color: #ffffff;
+ text-decoration: none;
+ color: #ffffff;
+ 
+ 
 }
 
 a[class="register"] {
-  color: #323361;
+  color:#323361;
   text-decoration: none;
 }
 
-.socialMedia {
+.socialMedia{
   display: flex;
   gap: 2vw;
   justify-content: center;
   margin-top: 4vh;
-  color: #f9f9fb;
+  color:#f9f9fb;
 }
 
-.inputi {
-  width: 90%;
-  font-weight: 300;
-  color: #fff;
-  font-size: 20px;
-  letter-spacing: 1.2px;
-  padding: 10px 10px;
-  outline: none;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.27);
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  margin: max(10px, 1vw) 0;
+.inputi{
+width: 90%;
+font-weight: 300;
+color: #fff;
+font-size: 20px;
+letter-spacing: 1.2px;
+padding: 10px 10px;
+outline: none;
+background: rgba(255, 255, 255, 0);
+border: none;
+border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+box-sizing: border-box;
+font-family: "Roboto", sans-serif;
+margin: max(10px, 1vw) 0;
 }
 
-::placeholder {
+::placeholder{
   color: #fff;
 }
