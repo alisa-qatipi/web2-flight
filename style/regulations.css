@@ -1,3 +1,9 @@
+body {
+    background-image: url("/airline/images/gradientBack.jpg");
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
 .regTitle{
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,6 +26,5 @@ body::-webkit-scrollbar {
     border-radius: 1px;
   }
 
-.body {
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-}
+
+
