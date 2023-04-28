@@ -68,19 +68,6 @@
 							</li>
 						</ul>
 
-			
-			<input type="submit" value="Submit" action="bookings.php">
-			
-		</form>
-	</div>
-    </div>
-
-	<div class="advantages">
-		<div class="container">
-			<div class="reasons">
-				<div class="reason">
-					<div class="icon">
-					<i class="fa-solid fa-route"></i>
 					</div>
 					<div class="doubleRow">
 						<div class="doubleInput">
@@ -109,10 +96,6 @@
 
 						</div>
 					</div>
-				</div>
-				<div class="reason">
-					<div class="icon">
-					<i class="fa-solid fa-dollar-sign" style="color: #323361;"></i>
 
 					<div class="doubleRow">
 						<div class="doubleInput">
@@ -162,10 +145,6 @@
 						</div>
 						
 					</div>
-				</div>
-				<div class="reason">
-					<div class="icon">
-					<i class="fa-solid fa-phone" style="color: #323361;"></i>
 					<p>error message</p>
 
 					<input type="submit" value="Submit"
@@ -205,14 +184,6 @@
 								travelers.</div>
 						</div>
 					</div>
-				</div>
-				<div class="reason">
-					<div class="icon">
-					<i class="fa-solid fa-plane-up" style="color: #323361;"></i>
-					</div>
-					<div class="description">
-						<div class="descTitle">Modern Fleet</div>
-						<div class="descParagraph">SkyKosovo boasts of a modern fleet of aircraft equipped with the latest technology and amenities to provide travelers with a comfortable and safe journey. We ensure that every traveler has a memorable flying experience.</div>
 					<div class="reason">
 						<div class="icon">
 							<!-- <i class="fa-solid fa-head-side-headphones"></i> -->

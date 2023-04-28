@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   }
   
   body::-webkit-scrollbar {
@@ -43,8 +42,6 @@ body {
     border-radius: 5px;
     margin: 0.5rem max(18px, 3.5vw);
     backdrop-filter: blur(8px);
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  
   }
   .booking-form h2 {
     display: inline-block;
@@ -57,23 +54,22 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
     border-bottom: 2px solid #ffff;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: "Raleway", sans-serif;
   }
   .fareChoice {
     text-align: left;
     margin: 0.7em 0;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   }
   .fareChoice h6 {
     display: inline;
     margin-top: 10px;
     color: #323361;
-    font-size: 23px;
+    font-size: 19px;
     text-transform: capitalize;
     margin-bottom: 0.7em;
     font-weight: 400;
     letter-spacing: 2px;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: "Raleway", sans-serif;
   }
   .fareChoice ul {
     display: inline;
@@ -83,10 +79,10 @@ body {
   }
   .fareChoice ul li label {
     color: #fff;
-    font-size: 17.5px;
+    font-size: 13.5px;
     font-weight: 400;
     letter-spacing: 1px;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: "Raleway", sans-serif;
     cursor: pointer;
   }
   
@@ -98,7 +94,7 @@ body {
     width: 100%;
     font-weight: 300;
     color: #fff;
-    font-size: 17px;
+    font-size: 14px;
     letter-spacing: 1.2px;
     padding: 10px 10px;
     outline: none;
@@ -106,10 +102,11 @@ body {
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.27);
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
   
   .doubleRow {
+    display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
@@ -149,12 +146,11 @@ body {
     border: none;
     border-radius: 5px;
     padding: 0.8rem 1.8rem;
-    font-size: 19px;
+    font-size: 16px;
     width: 30%;
     cursor: pointer;
     background-color: #323361;
     color: #fff;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
   }
 
   .disabled{
@@ -198,7 +194,6 @@ body {
     /* margin: 0 0 10px; */
     padding: 3%;
     position: relative;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   }
 
   .advantages .container{
@@ -206,13 +201,11 @@ body {
     max-width: 1454px;
     /* padding: 0 20px; */
     width: 100%;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   }
 
   .advantages .container .reasons{
     display: flex;
     flex-wrap: wrap;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   }
 
   .advantages .container .reasons .reason{
@@ -220,7 +213,6 @@ body {
     flex: 0 1 25%;
     justify-content: flex-start;
     text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   }
 
   .reason .icon{
@@ -245,12 +237,11 @@ body {
 
   .reason .description{
     padding-right: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   }
 
   .descTitle{
     color:#323361;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: P22 Underground Pro,P22 Apple Fallback,P22 Windows Fallback,P22 Android Fallback,sans-serif;
     font-weight: 600;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -260,6 +251,5 @@ body {
     font-size: 14px;
     line-height: 1;
     margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     /* text-align: center; */
   }

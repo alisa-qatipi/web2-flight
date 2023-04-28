@@ -1,7 +1,10 @@
 .footer {
     padding: max(17.5px, 2vw) 3%;
-    background-color: #f2f2f4;  
-    color: #fff;
+    background-color: #f2f2f4;
+    -webkit-box-shadow: 0px -11px 17px 3px rgba(16,52,166,0.35);
+-moz-box-shadow: 0px -11px 17px 3px rgba(16,52,166,0.35);
+box-shadow: 0px -11px 17px 3px rgba(16,52,166,0.35);
+color: #fff;
 }
 .mainRow {
   width: 100%;

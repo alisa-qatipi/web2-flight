@@ -4,7 +4,6 @@
     width: 94%;
     display: flex;
     justify-content: space-between;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     padding: 0 3%;
     align-items: center;
     z-index: 9999;
@@ -12,6 +11,9 @@
     /* border: 1px solid red; */
     color: #fff;
     /* border: 1px solid red; */
+    -webkit-box-shadow: 0px 11px 17px 3px rgba(0,0,117,0.46);
+    -moz-box-shadow: 0px 11px 17px 3px rgba(0,0,117,0.46);
+    box-shadow: 0px 11px 17px 3px rgba(16,52,166,0.35);
     /* border: 0.5px solid red; */
     
   }
@@ -40,7 +42,7 @@
     text-decoration: none;
   }
   .title {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: "Courier New", Courier, monospace;
     font-weight: bold;
     letter-spacing: 0.05vh;
     color: #323361;

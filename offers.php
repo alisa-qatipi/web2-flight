@@ -22,16 +22,6 @@
     <div class="backdrop"></div>
     <h1>SkyKosovo's Offers</h1>
 
-<div class="offerDescription">At SkyKosovo, we take pride in offering our customers exceptional value through our special offers. We understand that air travel can be expensive, and that's why we strive to provide our customers with the best deals and discounts on their flight bookings. Our special offers are designed to cater to the needs of all travelers, be it budget-conscious travelers or those looking for luxury travel experiences. From seasonal promotions to last-minute deals, we have something for everyone. Our team of experts works tirelessly to bring you the best offers on the market, ensuring that you get the best value for your money. Book with SkyKosovo today and take advantage of our special offers.</div>
-    
-    </div>
-    <div class="container">
-    <div class="cardContainer">
-    <div class="card">
-  <img src="./images/venice.jpg" alt="venice">
-  <div class="cardTitle">
-  <h3 class="cityName">Venice</h3>
-  <h5 class="price">$400</h5>
     <div class="offerDescription">At SkyKosovo, we take pride in offering our customers exceptional value through our
       special offers. We understand that air travel can be expensive, and that's why we strive to provide our customers
       with the best deals and discounts on their flight bookings. Our special offers are designed to cater to the needs
