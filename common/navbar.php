@@ -35,7 +35,7 @@
     session_start();
     if (isset($_SESSION["loggedin"])) {
       echo ' <a href="logout.php" class="logIn authenticationButton">Log out</a>';
-      echo ' <a href="logout.php" class="bookings authenticationButton">My Bookings</a>';
+      echo ' <a href="bookings.php" class="bookings authenticationButton">My Bookings</a>';
     } else {
       echo ' <a href="login.php" class="logIn authenticationButton">Log in</a>';
       echo ' <a href="register.php" class="createAccount authenticationButton">Create Account</a>';

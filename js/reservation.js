@@ -13,11 +13,14 @@ var oneWay = document.getElementById('a-option');
 				if (roundTrip.checked == "") {
 					// arrivalLocation.style = "opacity: 0";
 					// returnDate.style = "opacity: 0";
-					arrivalLocation.disabled = true;
+					// arrivalLocation.disabled = true;
+					arrivalLocation.setAttribute = ("required", (""));
 					returnDate.disabled = true;
 
 				} else{
-					arrivalLocation.disabled = false;
+
+					// arrivalLocation.style = "color: red";
+					arrivalLocation.removeAttribute = ("required");
 					returnDate.disabled = false;
 				}
 			}
@@ -26,7 +29,8 @@ var oneWay = document.getElementById('a-option');
 				if (adults.value == "" && children.value == "" && infants.value == ""){
 					// alert("Please choose number of passengers");
 					return false;
-				} else{
+				} 
+				else{
 					// alert(adults.value || children.value || infants.value);
 					return true;
 				}
@@ -55,7 +59,10 @@ var oneWay = document.getElementById('a-option');
 				if(roundTrip.checked == "" && oneWay.checked == ""){
 					alert ("Please select your fare");
 					return false;
-				} else {
+				} else if(oneWay.checked == ""){
+					
+				}
+				else {
 					console.log("done")
 					// e.preventDefault();
 					checkPassenger();

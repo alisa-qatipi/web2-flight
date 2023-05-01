@@ -28,7 +28,7 @@
   }
   
   .nav .leftSide {
-    display: flex;
+    display: flex; 
     gap: 1rem;
     flex: 1;
     height: max(21px, 1.8vw);

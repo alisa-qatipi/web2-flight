@@ -67,6 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Redirect user to welcome page
                             header("location: index.php");
+                            // echo "<script>alert('hi')</script>";
                         } else {
                             // Password is not valid, display a generic error message
                             $login_err = "Invalid email or password";
