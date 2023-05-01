@@ -56,6 +56,8 @@
                 echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
             }
 
+            
+
         } else {
             $sql = "SELECT * FROM reservations WHERE userID = '$userID'";
             if ($result = mysqli_query($link, $sql)) {

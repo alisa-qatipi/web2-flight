@@ -27,6 +27,7 @@
 					<div class="fareChoice">
 						<h6>Select your Fare <span style="color: red;">*</span></h6>
 						<ul>
+							<!-- fix it in the database se del vec on -->
 							<li>
 								<input type="radio" id="a-option" name="fare_choice" onchange="checkReturn()">
 								<label for="a-option">One Way</label>
