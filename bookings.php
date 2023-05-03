@@ -32,6 +32,7 @@
             $sql = "SELECT * FROM reservations";
             if ($result = mysqli_query($link, $sql)) {
                 if (mysqli_num_rows($result) > 0) {
+                    echo "<div class='table-container'>";
                     echo "<table border=2;>";
                     echo "<tr><th>Reservation ID</th> <th>Fare choice</th> <th>Departure location</th> <th>Arrival location</th> <th>Departure date</th> <th>Return date</th> <th>Adults</th> <th>Children</th> <th>Infants</th> <th>Actions</th> </tr>";
                     while ($row = mysqli_fetch_array($result)) {
@@ -45,12 +46,13 @@
                         echo "<td>" . $row['adults'] . "</td>";
                         echo "<td>" . $row['children'] . "</td>";
                         echo "<td>" . $row['infants'] . "</td>";
-                        echo "<td class='actions'> <form action='./updateData.php' method='POST'><input type='hidden' name='reservationID' value='" . $row['reservationID'] . "'</input><button id='myBtn'>Edit</button></form> <form action='./common/deleteData.php' method='POST'><input type='hidden' name='reservationID' value='" . $row['reservationID'] . "'</input><button>Delete</button></form>";
+                        echo "<td class='actions'> <form action='./updateData.php' method='POST'><input type='hidden' name='reservationID' value='" . $row['reservationID'] . "'</input><button class='editButton' id='myBtn'>Edit</button></form> <form action='./common/deleteData.php' method='POST'><input type='hidden' name='reservationID' value='" . $row['reservationID'] . "'</input><button class='deleteButton'>Delete</button></form>";
                         // echo "<td> <button id='myBtn'>Edit</button> <form action='./common/deleteData.php' method='POST'><input type='hidden' name='reservationID' value='" . $row['reservationID'] . "'</input><button>Delete</button></form>";
                         // echo "<td> <button class='edit-btn'>Edit</button> <form action='./common/deleteData.php' method='POST'><input type='hidden' name='reservationID' value='" . $row['reservationID'] . "'</input><button>Delete</button></form>";
                         echo "</tr>";
                     }
                     echo "</table>";
+                    echo "</div>";
                 } else {
                     echo "You haven't done any reservations yet.";
                 }
@@ -58,13 +60,13 @@
                 echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
             }
 
-            
+
 
         } else {
             $sql = "SELECT * FROM reservations WHERE userID = '$userID'";
             if ($result = mysqli_query($link, $sql)) {
                 if (mysqli_num_rows($result) > 0) {
-                    echo "<table border=2;>";
+                    echo "<table>";
                     echo "<tr><th>Reservation ID</th> <th>Fare choice</th> <th>Departure location</th> <th>Arrival location</th> <th>Departure date</th> <th>Return date</th> <th>Adults</th> <th>Children</th> <th>Infants</th> </tr>";
                     while ($row = mysqli_fetch_array($result)) {
                         echo "<tr>";
@@ -87,7 +89,7 @@
                 echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
             }
         }
-        
+
 
     }
 
@@ -97,6 +99,7 @@
     mysqli_close($link);
     ?>
 
+    <?php include("common/footer.php"); ?>
 
     <script src="./js/modal.js"></script>
 </body>

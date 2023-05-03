@@ -1,3 +1,18 @@
+
+
+<html>
+
+<head>
+    <title>update</title>
+    <link rel="stylesheet" href="./style/update.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar2.css">
+    <!-- <script src="../js/reservation.js"></script> -->
+</head>
+
+<body onload="loading()">
+
+<?php include("common/navbar.php"); ?>
 <?php
 
 // require the configuration file
@@ -15,7 +30,7 @@ if (isset($_POST['reservationID'])) {
     // what to display if the action was successful or not
     if ($result = mysqli_query($link, $sql)) {
         if (mysqli_num_rows($result) > 0) {
-            echo "The selected reservation: <br>";
+            echo "<h1>The selected reservation:</h1> <br>";
             while ($row = mysqli_fetch_array($result)) {
                 $fare_choices = array('one-way', 'round-trip');
                 $departure_locations = array('Tirana', 'Pristina', 'Rome', 'Berlin', 'Paris', 'Zagreb');
@@ -121,16 +136,7 @@ if (isset($_POST['reservationID'])) {
 
 
 ?>
-
-<html>
-
-<head>
-    <title>update</title>
-    <link rel="stylesheet" href="./style/update.css">
-    <!-- <script src="../js/reservation.js"></script> -->
-</head>
-
-<body onload="loading()">
+<?php include("common/footer.php"); ?>
     <!-- <script src="../js/reservation.js"></script> -->
     <script>
         var fares = document.getElementById('fares');
