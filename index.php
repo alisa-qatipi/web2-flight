@@ -29,11 +29,11 @@
 						<ul>
 							<!-- fix it in the database se del vec on -->
 							<li>
-								<input type="radio" id="a-option" name="fare_choice" onchange="checkReturn()">
+								<input type="radio" id="a-option" name="fare_choice" value="one-way" onchange="checkReturn()">
 								<label for="a-option">One Way</label>
 							</li>
 							<li>
-								<input type="radio" id="b-option" name="fare_choice"  onchange="checkReturn()">
+								<input type="radio" id="b-option" name="fare_choice" value="round-trip" onchange="checkReturn()">
 								<label for="b-option">Round-Trip</label>
 
 							</li>
@@ -42,26 +42,26 @@
 					</div>
 					<div class="doubleRow">
 						<div class="doubleInput">
-							<select class="form-control" id="departureLocation" name="departure_location">
+							<select class="form-control" id="departureLocation" name="departure_location" required>
 								<option value="">From</option>
-								<option value="Lorem Ipsum">Lorem Ipsum</option>
-								<option value="Adipiscing">Adipiscing</option>
-								<option value="Lorem Ipsum">Lorem Ipsum</option>
-								<option value="Adipiscing">Adipiscing</option>
-								<option value="Lorem Ipsum">Lorem Ipsum</option>
-								<option value="Adipiscing">Adipiscing</option>
+								<option value="Tirana">Tirana</option>
+								<option value="Pristina">Pristina</option>
+								<option value="Rome">Rome</option>
+								<option value="Berlin">Berlin</option>
+								<option value="Paris">Paris</option>
+								<option value="Zagreb">Zagreb</option>
 							</select>
 							<p id="departureLocationError">error message</p>
 						</div>
 						<div class="doubleInput">
-							<select class="form-control" id="arrivalLocation" name="arrival_location">
+							<select class="form-control" id="arrivalLocation" name="arrival_location" required>
 								<option value="">To</option>
-								<option value="Lorem Ipsum">Lorem Ipsum</option>
-								<option value="Adipiscing">Adipiscing</option>
-								<option value="Lorem Ipsum">Lorem Ipsum</option>
-								<option value="Adipiscing">Adipiscing</option>
-								<option value="Lorem Ipsum">Lorem Ipsum</option>
-								<option value="Adipiscing">Adipiscing</option>
+								<option value="Tirana">Tirana</option>
+								<option value="Pristina">Pristina</option>
+								<option value="Rome">Rome</option>
+								<option value="Berlin">Berlin</option>
+								<option value="Paris">Paris</option>
+								<option value="Zagreb">Zagreb</option>
 							</select>
 							<p>error message</p>
 
@@ -71,12 +71,12 @@
 					<div class="doubleRow">
 						<div class="doubleInput">
 							<input id="departureDate" name="departure_date" type="date" placeholder="Departure Date" min="<?php echo date('Y-m-d'); ?>"
-								class="datepicker">
+								class="datepicker" required>
 							<p>error message</p>
 
 						</div>
 						<div class="doubleInput">
-							<input type="date" id="returnDate" name="return_date" placeholder="Return Date" min="<?php echo date('Y-m-d'); ?>"
+							<input type="date" id="returnDate" name="return_date" placeholder="Return Date" 
 								class="datepicker">
 							<p>error message</p>
 
@@ -85,7 +85,7 @@
 
 					<div class="passengerData">
 						<div class="passenger">
-							<select class="form-control" id="adults" name="adults">
+							<select class="form-control" id="adults" name="adults" required>
 								<option value="">Adult(12+ Yrs)</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -95,7 +95,7 @@
 							</select>
 						</div>
 						<div class="passenger">
-							<select class="form-control" id="children" name="children">
+							<select class="form-control" id="children" name="children" disabled>
 								<option value="">Children(2-11 Yrs)</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -105,18 +105,18 @@
 							</select>
 						</div>
 						<div class="passenger">
-							<select class="form-control" id="infants" name="infants">
+							<select class="form-control" id="infants" name="infants" disabled>
 								<option value="">Infant(under 2Yrs)</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
 								<option value="4">4</option>
-								<option value="5">5+</option>
+								<option value="5">5</option>
 							</select>
 						</div>
 						
 					</div>
-					<p>error message</p>
+					<small>Children and infants must be accompanied by at least one adult</small><br>
                     <input type="hidden" id="userID" name="userID" >
 
 					<input type="submit" value="Submit"
@@ -224,8 +224,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
             // Attempt to execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {
                 // Redirect to success page
-                header("Location: offers.php");
-				exit();
+                header("location: bookings.php");
+				// exit();
             } else {
                 echo "Error: " . mysqli_error($link);
             }

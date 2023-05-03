@@ -12,7 +12,9 @@ if (isset($_POST['reservationID'])) {
 
     // what to display if the action was successful or not
     if (mysqli_query($link, $sql)) {
-        echo "$reservationID deleted successfully.";
+        // echo "$reservationID deleted successfully.";
+        header('location: ../bookings.php');
+     
     } else {
         echo "Could not be able to execute $sql. " . mysqli_error($link);
     }
