@@ -104,13 +104,13 @@
 
     <div class="cardContainer">
       <div class="card">
-        <img src="./images/paris.jpg" alt="paris">
+        <img src="/web2-flight/images/paris.jpg" alt="paris">
         <div class="cardTitle">
           <h3 class="cityName">Paris</h3>
           <h5 class="price">$750</h5>
         </div>
         <p>Paris, France: Known as the "City of Love," Paris is a city of romance and culture with its iconic landmarks,
-          world-renowned museums, and charming streetscapes. The city is home to several famous attractions, including
+          and world-renowned museums. The city is home to several famous attractions, including
           the Eiffel Tower.</p>
         <a class="button" href="index.php">Book now!</a>
       </div>

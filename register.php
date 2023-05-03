@@ -173,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <div class="titleContain">
                 <div class="logoContain">
-                    <img class="logoReg" style="width: 5vw;" src="../airline/images/SkyKosovoLogo.png">
+                    <img class="logoReg" style="width: 5vw;" src="/web2-flight/images/SkyKosovoLogo.png">
                 </div>
                 <h1 class="titleReg">SkyKosovo</h1>
             </div>
@@ -206,7 +206,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <a class="register" href="index.php">Register</a>
         </div> -->
             <div class="loginLink">
-                <div class="login">Already have an account?</div> <a href="/airline/login.php" class="loginshort">Log
+                <div class="login">Already have an account?</div> <a href="/web2-flight/login.php" class="loginshort">Log
                     in</a>
             </div>
             <div class="socialMedia">

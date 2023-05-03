@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <div class="titleContainer">
                 <div class="logoContainer">
-                    <img class="logo" style="width: 5vw;" src="../airline/images/SkyKosovoLogo.png">
+                    <img class="logo" style="width: 5vw;" src="/web2-flight/images/SkyKosovoLogo.png">
                 </div>
                 <h1 class="title">SkyKosovo</h1>
             </div>

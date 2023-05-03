@@ -1,7 +1,6 @@
 body {
     /* overflow: hidden; */
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-image: url("../images/gradientBack.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
@@ -14,7 +13,7 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: rgba(112,112,112,1);
+    background: rgba(165, 161, 161, 0.116);
     border-radius: 1px;
   }
   body::-webkit-scrollbar-thumb {
@@ -24,17 +23,23 @@ body::-webkit-scrollbar {
 
 .about {
     width: 70%;
+    font-size: 19px;
     box-sizing: border-box;
     border-radius: 5px;
     margin: 4em auto;
-    background: rgba(165, 161, 161, 0.48);
     backdrop-filter: blur(8px);
     color: #ffff;
     padding: 2em 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 .h3 {
     color: #323361;
+    
 }
 
 .h4 {
@@ -59,4 +64,5 @@ body::-webkit-scrollbar {
     letter-spacing: 2px;
     z-index: 33;
     margin-top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }

@@ -1,7 +1,7 @@
 <div id="navbar" class="nav">
   <div class="leftSide">
     <a href="index.php" class="logoContent">
-      <div class="logo"><img src="airline/images/SkyKosovoLogo.png" alt="Logo"></div>
+      <div class="logo"><img src="/web2-flight/images/SkyKosovoLogo.png" alt="Logo"></div>
 
       <div class="title">SkyKosovo</div>
     </a>
@@ -13,17 +13,12 @@
       </a>
     </div>
     <div class="nav-link-container">
-      <a href="#" class="nav-link">
-        Bookings
-      </a>
-    </div>
-    <div class="nav-link-container">
       <a href="about.php" class="nav-link">
         About Us
       </a>
     </div>
     <div class="nav-link-container">
-      <a href="#" class="nav-link">
+      <a href="regulations.php" class="nav-link">
         Regulations
       </a>
     </div>

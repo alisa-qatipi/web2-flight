@@ -2,31 +2,20 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #94bbe9;
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-track {
-  background: rgba(112,112,112,1);
-  border-radius: 1px;
-}
-body::-webkit-scrollbar-thumb {
-  background-color:  #323361;
-  border-radius: 1px;
+  background-color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 .banner{
     background-size: cover;
     background-repeat: no-repeat;
     padding:  max(20px, 2.8vw) 0;
-    color: #fff;
+    color: #323361;
     position: relative;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* color: #fff;
-    -webkit-text-stroke: 1px #1034A6; */
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0px 11px 17px 3px rgba(224, 224, 224, 0.46);
+    -moz-box-shadow: 0px 11px 17px 3px rgba(224, 224, 224, 0.46);
+    box-shadow: 0px 11px 17px 3px rgba(224, 224, 224, 0.46);
 }
 .backdrop{
     width: 100%;
@@ -116,11 +105,23 @@ h3 {
   }
   
   .card .cardTitle{
-   border: 1px solid red;
     display: flex;
     color: #000;
     align-items: center;
     justify-content: space-between;
+  }
+
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(112,112,112,1);
+    border-radius: 1px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color:  #323361;
+    border-radius: 1px;
   }
 
 img {
