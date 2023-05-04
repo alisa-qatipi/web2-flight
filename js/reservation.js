@@ -10,14 +10,8 @@ var infants = document.getElementById("infants");
 
 const checkReturn = () => {
   if (roundTrip.checked == false) {
-    // arrivalLocation.style = "opacity: 0";
-    // returnDate.style = "opacity: 0";
-    // arrivalLocation.disabled = true;
-    // arrivalLocation.setAttribute("required", "");
     returnDate.disabled = true;
   } else {
-    // arrivalLocation.style = "color: red";
-    // arrivalLocation.removeAttribute("required");
     returnDate.disabled = false;
   }
 };
@@ -54,9 +48,11 @@ adults.addEventListener("change", () => {
 });
 
 const checkPassenger = (event) => {
-  if (adults.value == "") {
+  if (!adults.value) {
     event.preventDefault();
-    alert("Please choose number of passengers");
+    const passengerError = document.getElementById('passengerError');
+    passengerError.innerHTML = 'Please choose number of passengers!'
+    // alert("Please choose number of passengers");
     return false;
   } else {
     // alert(adults.value || children.value || infants.value);
@@ -64,53 +60,31 @@ const checkPassenger = (event) => {
   }
 };
 
-// const checkLocation = (event) => {
-//   if (roundTrip.checked == false) {
-//     if (departureLocation.value == "" || departureDate.value == "" || arrivalLocation.value == "") {
-//       alert("Please choose departure location, arrival location, and departure date");
-//       event.preventDefault();
-      
-//       return false;
-//     } else {
-//       return true;
-//     }
-//   } else {
-//     if (
-//       departureLocation.value == "" ||
-//       departureDate.value == "" ||
-//       arrivalLocation.value == "" ||
-//       returnDate.value == ""
-//     ) {
-//       alert("Please complete all form");
-//       event.preventDefault();
-//       return false;
-//     } else {
-//       return true;
-//     }
-//   }
-// };
-
 const formValidation = (event) => {
   if (roundTrip.checked == false && oneWay.checked == false) {
     alert("Please select your fare");
-    event.preventDefault();
+    // event.preventDefault();
     return false;
   } else if (roundTrip.checked == true){
-    if(departureLocation == "" && arrivalLocation == "" && departureDate == "" && returnDate == "" ){
+    if(departureLocation.value == "" && arrivalLocation.value == "" && departureDate.value == "" && returnDate.value == ""){
       alert ("Please check that you have completed all the fields");
-      event.preventDefault();
+      // event.preventDefault();
       return false;
-    }else{
+    } else if (!checkPassenger()) {
+      // event.preventDefault();
+      return false;
+    } else {
       return true;
     }
   } else if(oneWay.checked == true){
-    if(departureLocation == "" && arrivalLocation == ""  && departureDate == ""){
-      alert ("Please check that you have completed all the");
-      event.preventDefault();
+    if(departureLocation.value == "" && arrivalLocation.value == ""  && departureDate.value == ""){
+      alert ("Please check that you have completed all the fields");
+      // event.preventDefault();
       return false;
-    }
-    else{
-      // location('bookings.php');
+    } else if (!checkPassenger()) {
+      // event.preventDefault();
+      return false;
+    } else {
       return true;
     }
   }

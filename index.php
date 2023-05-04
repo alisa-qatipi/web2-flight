@@ -51,7 +51,6 @@
 								<option value="Paris">Paris</option>
 								<option value="Zagreb">Zagreb</option>
 							</select>
-							<p id="departureLocationError">error message</p>
 						</div>
 						<div class="doubleInput">
 							<select class="form-control" id="arrivalLocation" name="arrival_location" required>
@@ -63,7 +62,6 @@
 								<option value="Paris">Paris</option>
 								<option value="Zagreb">Zagreb</option>
 							</select>
-							<p>error message</p>
 
 						</div>
 					</div>
@@ -72,13 +70,11 @@
 						<div class="doubleInput">
 							<input id="departureDate" name="departure_date" type="date" placeholder="Departure Date" min="<?php echo date('Y-m-d'); ?>"
 								class="datepicker" required>
-							<p>error message</p>
 
 						</div>
 						<div class="doubleInput">
 							<input type="date" id="returnDate" name="return_date" placeholder="Return Date" 
 								class="datepicker">
-							<p>error message</p>
 
 						</div>
 					</div>
@@ -116,7 +112,7 @@
 						</div>
 						
 					</div>
-					<small>Children and infants must be accompanied by at least one adult</small><br>
+					<small id='passengerError'>Children and infants must be accompanied by at least one adult</small><br>
                     <input type="hidden" id="userID" name="userID" >
 
 					<input type="submit" value="Submit"
@@ -186,7 +182,8 @@
 		<script src="js/reservation.js">
 			
 		</script>
-	</body>
+	
+</body>
 </html>
 
 <?php 

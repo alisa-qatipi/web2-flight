@@ -1,7 +1,7 @@
 <div id="navbar" class="nav">
   <div class="leftSide">
     <a href="index.php" class="logoContent">
-      <div class="logo"><img src="/web2-flight/images/SkyKosovoLogo.png" alt="Logo"></div>
+      <div class="logo"><img src="../images/SkyKosovoLogo.png" alt="Logo"></div>
 
       <div class="title">SkyKosovo</div>
     </a>

@@ -19,7 +19,6 @@
 <body>
     <?php include("common/navbar.php"); ?>
 
-    <h1>My bookings</h1>
     <?php
     // Include config file
     require_once "./common/config.php";
@@ -32,12 +31,14 @@
             $sql = "SELECT * FROM reservations";
             if ($result = mysqli_query($link, $sql)) {
                 if (mysqli_num_rows($result) > 0) {
+                    echo "<h1>All bookings</h1>";
                     echo "<div class='table-container'>";
                     echo "<table border=2;>";
-                    echo "<tr><th>Reservation ID</th> <th>Fare choice</th> <th>Departure location</th> <th>Arrival location</th> <th>Departure date</th> <th>Return date</th> <th>Adults</th> <th>Children</th> <th>Infants</th> <th>Actions</th> </tr>";
+                    echo "<tr><th>Reservation ID</th> <th>User ID</th> <th>Fare choice</th> <th>Departure location</th> <th>Arrival location</th> <th>Departure date</th> <th>Return date</th> <th>Adults</th> <th>Children</th> <th>Infants</th> <th>Actions</th> </tr>";
                     while ($row = mysqli_fetch_array($result)) {
                         echo "<tr>";
                         echo "<td>" . $row['reservationID'] . "</td>";
+                        echo "<td>" . $row['userID'] . "</td>";
                         echo "<td>" . $row['fare_choice'] . "</td>";
                         echo "<td>" . $row['departure_location'] . "</td>";
                         echo "<td>" . $row['arrival_location'] . "</td>";
@@ -66,6 +67,7 @@
             $sql = "SELECT * FROM reservations WHERE userID = '$userID'";
             if ($result = mysqli_query($link, $sql)) {
                 if (mysqli_num_rows($result) > 0) {
+                    echo "<h1>My bookings</h1>";
                     echo "<table>";
                     echo "<tr><th>Reservation ID</th> <th>Fare choice</th> <th>Departure location</th> <th>Arrival location</th> <th>Departure date</th> <th>Return date</th> <th>Adults</th> <th>Children</th> <th>Infants</th> </tr>";
                     while ($row = mysqli_fetch_array($result)) {
@@ -83,7 +85,7 @@
                     }
                     echo "</table>";
                 } else {
-                    echo "You haven't done any reservations yet.";
+                    echo "<h1>My bookings</h1> </br> <h1>You haven't done any reservations yet.</h1>";
                 }
             } else {
                 echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
@@ -91,6 +93,36 @@
         }
 
 
+        if ($userID == '13') {
+            $sql = "SELECT * FROM users";
+
+            if ($result = mysqli_query($link, $sql)) {
+                if (mysqli_num_rows($result) > 0) {
+                    echo "<h1>Users</h1>";
+                    echo "<div class='table-container'>";
+                    echo "<table border=2;>";
+                    echo "<tr><th>User ID</th> <th>Name</th> <th>Surname</th> <th>Email</th> <th>Phone Number</th> <th>Age</th> <th>Password</th><th>Actions</th> </tr>";
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo "<tr>";
+                        echo "<td>" . $row['userID'] . "</td>";
+                        echo "<td>" . $row['name'] . "</td>";
+                        echo "<td>" . $row['surname'] . "</td>";
+                        echo "<td>" . $row['email'] . "</td>";
+                        echo "<td>" . $row['phone_number'] . "</td>";
+                        echo "<td>" . $row['age'] . "</td>";
+                        echo "<td>" . $row['password'] . "</td>";
+                        echo "<td class='actions'> <form action='./common/deleteData.php' method='POST'><input type='hidden' name='userID' value='" . $row['userID'] . "'</input><button class='deleteButton'>Delete</button></form>";
+                        // echo "<td> <button id='myBtn'>Edit</button> <form action='./common/deleteData.php' method='POST'><input type='hidden' name='reservationID' value='" . $row['reservationID'] . "'</input><button>Delete</button></form>";
+                        // echo "<td> <button class='edit-btn'>Edit</button> <form action='./common/deleteData.php' method='POST'><input type='hidden' name='reservationID' value='" . $row['reservationID'] . "'</input><button>Delete</button></form>";
+                        echo "</tr>";
+                    }
+                    echo "</table>";
+                    echo "</div>";
+                } else {
+                    echo "You haven't done any reservations yet.";
+                }
+            }
+        }
     }
 
 

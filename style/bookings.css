@@ -73,7 +73,7 @@ th {
 }
 
 .editButton{
-  background-color: #4CAF50; /* Green */
+  background-color: #5a6268; /* Green */
   border: none;
   color: white;
   padding: 0.5rem 1rem;
@@ -85,7 +85,7 @@ th {
 }
 
 .editButton:hover{
-  background-color: #3c833f;
+  background-color: #43484b;
 }
 
 .deleteButton{
